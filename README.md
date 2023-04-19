@@ -1,4 +1,4 @@
-# Evaluation Monitor
+# 42- EvalNotifier
 This Python project helps you monitor your email inbox for specific subjects and provides visual and audio alerts when new emails matching the criteria are detected.
 The user interface is built using the Tkinter library, and audio alerts are played using the Pygame library.
 Mail are checked every 60 seconds by defaut, and found mail are set as read when corresponding.
