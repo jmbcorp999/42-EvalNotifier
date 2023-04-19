@@ -30,6 +30,7 @@ Additionally, the program's window will be brought to the foreground when a new 
 To customize the program for your specific needs, you can modify the following sections in the EvalNotifier.py script:
 1. Update the `if subject == "You have a new booking":` and `elif subject == "Evaluation imminent":` conditions to match the subjects you want to monitor.
 2. Replace the audio files new.wav and imminent.wav with your preferred audio alerts.
+3. Replace REFRESH value to change the mail-checking refresh rate.
 
 # Happy monitoring!
 
