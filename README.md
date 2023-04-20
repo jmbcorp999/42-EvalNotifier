@@ -13,7 +13,7 @@ You can install these libraries using pip:
 
 On MacOs, you could have to install tkinter :
 
-```brew install tcl-tk```
+```brew install python-tk@3.10```
 
 Note: Tkinter comes pre-installed with most Python installations, so there's no need to install it separately.
 
