@@ -6,10 +6,10 @@ Mail are checked every 60 seconds by defaut, and found mail are set as read when
 ## Dependencies
 To run this project, you will need Python 3.x and the following libraries:
 - Tkinter: for the graphical user interface.
-- Pygame: to play audio alerts.
+- Playsound: to play audio alerts.
 You can install these libraries using pip:
 
-```pip install pygame```
+```pip3 install playsound```
 
 On MacOs, you could have to install tkinter :
 
