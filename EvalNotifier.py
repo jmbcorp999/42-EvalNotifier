@@ -4,12 +4,12 @@ import re
 import time
 from email.header import decode_header
 import tkinter as tk
-import pygame
+from playsound import playsound
 
-pygame.init()
-pygame.mixer.init()
-EMAIL = "YOUR_MAIL_HERE"
-PASSWORD = "YOUR_PASSWORD_HERE"
+# pygame.init()
+# pygame.mixer.init()
+EMAIL = "YOUR_MAIL"
+PASSWORD = "YOUR_PASSWORD"
 SERVER = "imap-mail.outlook.com" # For hotmail, you can replace it if needed
 REFRESH = 60000 # refresh mail checking time in milliseconds
 
@@ -66,15 +66,13 @@ def update_listbox(listbox, mail):
                 date_str, time_str = datetime_str.split("|", 1)
                 listbox.insert(tk.END, f"{date_str} - {time_str}")
                 mail.store(msg_num, '+FLAGS', '\\Seen')
-                sound = pygame.mixer.Sound("new.wav")
-                sound.play()
+                playsound("new.wav")
                 window.lift()
                 window.attributes('-topmost', True)
                 window.after_idle(window.attributes, '-topmost', False)
 
         elif subject == "Evaluation imminent":
-            sound2 = pygame.mixer.Sound("imminent.wav")
-            sound2.play()
+            playsound("imminent.wav")
             window.lift()
             window.attributes('-topmost', True)
             window.after_idle(window.attributes, '-topmost', False)
