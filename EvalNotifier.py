@@ -6,8 +6,6 @@ from email.header import decode_header
 import tkinter as tk
 from playsound import playsound
 
-# pygame.init()
-# pygame.mixer.init()
 EMAIL = "YOUR_MAIL"
 PASSWORD = "YOUR_PASSWORD"
 SERVER = "imap-mail.outlook.com" # For hotmail, you can replace it if needed
