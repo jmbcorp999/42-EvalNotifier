@@ -11,6 +11,10 @@ You can install these libraries using pip:
 
 ```pip install pygame```
 
+On MacOs, you could have to install tkinter :
+
+```brew install tcl-tk```
+
 Note: Tkinter comes pre-installed with most Python installations, so there's no need to install it separately.
 
 ## How to use
